@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.college_project.Admin.AdminDashborad">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8987e7" height="814.0" layoutX="18.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+        <Button layoutX="30.0" layoutY="63.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Dashboard">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="30.0" layoutY="363.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Logout">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="30.0" layoutY="303.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Counseling Data">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="30.0" layoutY="243.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Staff Management">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="30.0" layoutY="183.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Teacher Management">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="30.0" layoutY="123.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Student Management">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="574.0" layoutY="35.0" text="Staff Manegement">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <TableView layoutX="347.0" layoutY="89.0" prefHeight="736.0" prefWidth="929.0">
+            <columns>
+                <TableColumn prefWidth="115.14849853515625" text="Name" />
+                <TableColumn prefWidth="116.37725830078125" text="Age" />
+                <TableColumn prefWidth="129.60833740234375" text="Address" />
+                <TableColumn prefWidth="99.39166259765625" text="Phone" />
+                <TableColumn prefWidth="150.16766357421875" text="Email" />
+                <TableColumn prefWidth="134.3233642578125" text="Password" />
+                <TableColumn prefWidth="187.70782470703125" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

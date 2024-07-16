@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.college_project.teacher.TeacherDashbord">
+    <children>
+        <Button layoutY="56.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Home">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutY="176.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Logout">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutY="136.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Student Reports ">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="1.0" layoutY="96.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="288.0" text="Teacher">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="388.0" layoutY="56.0" text="Teacher Form">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+      <Label layoutX="388.0" layoutY="148.0" text="First Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="218.0" text="Degree">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="288.0" text="Teaching Courses">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="358.0" text="Phone number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="870.0" layoutY="148.0" text="Last Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="870.0" layoutY="218.0" text="University">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="540.0" layoutY="145.0" />
+      <TextField layoutX="540.0" layoutY="355.0" />
+      <TextField layoutX="540.0" layoutY="286.0" />
+      <TextField layoutX="540.0" layoutY="215.0" />
+      <Label layoutX="870.0" layoutY="289.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="870.0" layoutY="358.0" text="Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1026.0" layoutY="143.0" />
+      <TextField layoutX="1026.0" layoutY="356.0" />
+      <TextField layoutX="1026.0" layoutY="286.0" />
+      <TextField layoutX="1026.0" layoutY="215.0" />
+      <Button layoutX="1016.0" layoutY="719.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Edit" />
+      <Button layoutX="1147.0" layoutY="719.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Save" />
+    </children>
+</AnchorPane>
