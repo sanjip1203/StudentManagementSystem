@@ -69,7 +69,7 @@
             <Font size="20.0" />
          </font>
       </CheckBox>
-      <Button alignment="CENTER" layoutX="576.0" layoutY="707.0" mnemonicParsing="false" styleClass="&lt;Button text=&quot;Click Me&quot; style=&quot;-fx-background-radius: 50%; -fx-min-width: 50px; -fx-min-height: 50px; -fx-max-width: 50px; -fx-max-height: 50px;&quot; /&gt;" text="Sign-Up">
+      <Button fx:id="Signup" alignment="CENTER" layoutX="576.0" layoutY="707.0" mnemonicParsing="false" styleClass="&lt;Button text=&quot;Click Me&quot; style=&quot;-fx-background-radius: 50%; -fx-min-width: 50px; -fx-min-height: 50px; -fx-max-width: 50px; -fx-max-height: 50px;&quot; /&gt;" text="Sign-Up">
          <font>
             <Font size="24.0" />
          </font>

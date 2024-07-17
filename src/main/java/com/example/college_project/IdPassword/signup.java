@@ -1,4 +1,4 @@
-package com.example.college_project;
+package com.example.college_project.IdPassword;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;

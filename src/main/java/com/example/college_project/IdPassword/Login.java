@@ -1,4 +1,4 @@
-package com.example.college_project;
+package com.example.college_project.IdPassword;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
