@@ -27,7 +27,7 @@ public class Login {
     public void loginbutton (ActionEvent event) throws IOException{
 
         String email = loginemail.getText();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("signup.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("PasswordVerification/signup.fxml"));
         root = loader.load();
         String password = loginpassword.getText();
       //  root = FXMLLoader.load(getClass().getResource("Signup.fxml"));
