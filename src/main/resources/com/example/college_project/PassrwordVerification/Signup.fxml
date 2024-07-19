@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -19,61 +24,65 @@
                 <Font size="26.0" />
             </font>
         </Label>
+        <ChoiceBox fx:id="signupchoice" layoutX="588.0" layoutY="224.0" prefWidth="120.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Teacher" />
+                    <String fx:value="Student" />
+                    <String fx:value="Counseling" />
+                    <String fx:value="Library" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
         <Label layoutX="446.0" layoutY="328.0" text="Name   :">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-        <PasswordField layoutX="625.0" layoutY="329.0" />
         <Label layoutX="446.0" layoutY="381.0" text="Email  :">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-        <PasswordField layoutX="625.0" layoutY="382.0" />
         <Label layoutX="441.0" layoutY="434.0" text="Password  :">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-        <PasswordField layoutX="625.0" layoutY="434.0" />
+        <PasswordField fx:id="signuppassword" layoutX="625.0" layoutY="434.0" />
         <Label layoutX="446.0" layoutY="482.0" text="Re-PAssword  :">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-        <PasswordField layoutX="625.0" layoutY="483.0" />
+        <PasswordField fx:id="signuprpassword" layoutX="625.0" layoutY="483.0" />
         <Label layoutX="446.0" layoutY="530.0" text="Phone  :">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-        <PasswordField layoutX="625.0" layoutY="530.0" />
-        <Label layoutX="424.0" layoutY="596.0" text="Gender:">
+        <Label layoutX="446.0" layoutY="588.0" text="Gender:">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-        <CheckBox layoutX="769.0" layoutY="596.0" mnemonicParsing="false" text="Other">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </CheckBox>
-        <CheckBox layoutX="637.0" layoutY="596.0" mnemonicParsing="false" text="Female">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </CheckBox>
-        <CheckBox layoutX="532.0" layoutY="596.0" mnemonicParsing="false" text="Male">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </CheckBox>
-        <Button fx:id="Signup" alignment="CENTER" layoutX="576.0" layoutY="707.0" mnemonicParsing="false" styleClass="&lt;Button text=&quot;Click Me&quot; style=&quot;-fx-background-radius: 50%; -fx-min-width: 50px; -fx-min-height: 50px; -fx-max-width: 50px; -fx-max-height: 50px;&quot; /&gt;" text="Sign-Up">
+        <HBox fx:id="signupradiio" alignment="CENTER" layoutX="625.0" layoutY="600.0" spacing="20">
+            <RadioButton fx:id="signupfemale" mnemonicParsing="false" styleClass="radio-button" text="Female">
+                <toggleGroup>
+                    <ToggleGroup fx:id="gender_group" />
+                </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="signupmale" mnemonicParsing="false" styleClass="radio-button" text="Male" toggleGroup="$gender_group" />
+        </HBox>
+
+        <Button fx:id="signupbutton" alignment="CENTER" layoutX="576.0" layoutY="707.0" mnemonicParsing="false" onAction="#filewrite" styleClass="&lt;Button text=&quot;Click Me&quot; style=&quot;-fx-background-radius: 50%; -fx-min-width: 50px; -fx-min-height: 50px; -fx-max-width: 50px; -fx-max-height: 50px;&quot; /&gt;" text="Sign-Up">
             <font>
                 <Font size="24.0" />
             </font>
         </Button>
-        <ChoiceBox layoutX="555.0" layoutY="201.0" prefWidth="150.0" />
+      <TextField fx:id="signupname" layoutX="625.0" layoutY="330.0" />
+      <TextField fx:id="signupemail" layoutX="625.0" layoutY="383.0" />
+      <TextField fx:id="signupphone" layoutX="625.0" layoutY="532.0" />
+
     </children>
 </Pane>
